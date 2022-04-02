@@ -1,0 +1,140 @@
+@import "null.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+    background: url('../img/body_bg.jpg') 0 0 no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:visited{
+    color: white;
+}
+
+.wrapper {
+    overflow: hidden;
+    max-height: 880px;
+}
+
+.nav{
+    width: 100%;
+    height: 98px;
+    display: flex;
+    background: url('../img/nav_bg.jpg') 0 0 no-repeat;
+    align-items: center;
+}
+
+.nav {
+
+		// .nav__logo
+
+		&__logo {
+            padding: 34px 24px 34px 24px;
+            background-color: #4e70e0;
+            border: 1px solid white;
+		}
+
+		// .nav__menu
+
+		&__menu {
+            margin-left: 100px;
+            font-weight: 500;
+            font-size: 16;
+            text-transform: uppercase;
+            margin-right: 450px;
+            a{
+                margin-right: 75px;
+                padding-bottom: 38px;
+                &:last-child{
+                    margin: 0;
+                }
+                &:hover{
+                    border-bottom: 1px solid white;
+                }
+            }
+		}
+
+		// .nav__search
+
+		&__search {
+		}
+
+		// .nav__button
+
+		&__button {
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+            width: 109px;
+            height: 41px;
+            background-color: #3b64ee;
+            border: 0.854167px solid #FFFFFF;
+            box-sizing: border-box;
+		}
+}
+
+.content {
+
+    // .content__row
+
+    &__row {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    // .content__text
+
+    &__text {
+        margin-left: 90px;
+        padding-top: 150px;
+    }
+
+    // .content__title
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    // .content__exp
+
+    &__exp {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #FFFFFF;
+        max-width: 510px;
+        margin-bottom: 50px;
+    }
+
+    // .content__button
+
+    &__button {
+    }
+
+    // .content__img
+
+    &__img {
+        margin-left: 100px;
+    }
+
+    // .content__shape
+
+    &__shape {
+        position: relative;
+        z-index: 1;
+    }
+
+    // .content__girl
+
+    &__girl {
+        position: relative;
+        z-index: 2;
+        top: -53%;
+        left: 0;
+    }
+}
+
